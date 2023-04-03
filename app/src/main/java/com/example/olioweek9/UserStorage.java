@@ -34,7 +34,6 @@ public class UserStorage {
             ObjectOutputStream userWriter = new ObjectOutputStream(context.openFileOutput("users.data", Context.MODE_PRIVATE));
             userWriter.writeObject(users);
         } catch (IOException e) {
-            System.out.println("Rakettien tallentaminen ei onnistunut");
             //throw new RuntimeException(e);
         }
 
